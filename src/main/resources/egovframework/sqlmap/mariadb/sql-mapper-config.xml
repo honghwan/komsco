@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+    <typeAliases>
+		<typeAlias alias="loginVO" type="egovframework.general.login.service.LoginVo"/>
+		<typeAlias alias="mainVO" type="egovframework.general.main.service.MainVo"/>
+		<typeAlias alias="securityVO" type="egovframework.general.operation.security.service.SecurityVo"/>
+		<typeAlias alias="firewallVO" type="egovframework.general.service.firewall.service.FirewallVo"/>
+		<typeAlias alias="harmfulVO" type="egovframework.general.service.harmful.service.HarmfulVo"/>
+		<typeAlias alias="ipsVO" type="egovframework.general.service.ips.service.IpsVo"/>
+		<typeAlias alias="nacVO" type="egovframework.general.service.nac.service.NacVo"/>
+		<typeAlias alias="webfirewallVO" type="egovframework.general.service.webfirewall.service.WebfirewallVo"/>
+		<typeAlias alias="hisloginVO" type="egovframework.manager.history.login.service.HisloginVo"/>
+		<typeAlias alias="hissystemVO" type="egovframework.manager.history.system.service.HisSystemVo"/>
+    </typeAliases>
+</configuration>
