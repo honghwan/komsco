@@ -5,7 +5,7 @@
 <%@ taglib prefix="spring"    uri="http://www.springframework.org/tags"%>
 <!DOCTYPE html>
 <html>
-<head>
+<head> 
 	<meta charset="utf-8" />
 	<title>KOMSCO | 로그인</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
