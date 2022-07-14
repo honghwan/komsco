@@ -4,7 +4,7 @@
 
 <!-- App css -->
 <link href="<c:url value='/css/config/app.min.css'/>" rel="stylesheet" type="text/css"/>
-
+<link href="<c:url value='/css/config/style.css'/>" rel="stylesheet" type="text/css"/>
 <!-- icons -->
 <link href="<c:url value='/css/icons.min.css'/>" rel="stylesheet" type="text/css" />
 

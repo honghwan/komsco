@@ -10,7 +10,7 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-<title>IP신청</title>
+<title>정책허용/차단신청</title>
 <%@ include file="../../common/title-meta.jsp"%>
 <%@ include file="../../common/head-css.jsp"%>
 </head>
@@ -37,6 +37,7 @@
 				<div class="row">
 					<div class="col-12">
 						<div class="page-title-box">
+							<h4 class="page-title">정책허용/차단신청</h4>
 							<div class="page-title-right">
 								<ol class="breadcrumb m-0">
 									<li class="breadcrumb-item">Home</a></li>
@@ -45,7 +46,6 @@
 									<li class="breadcrumb-item active">정책허용/차단신청</li>
 								</ol>
 							</div>
-							<h4 class="page-title">정책허용/차단신청</h4>
 						</div>
 					</div>
 				</div>
@@ -60,29 +60,29 @@
 										<form>
 											<div class="row mb-2">
 												<label for="simpleinput"
-													class="col-4 col-xl-4 col-form-label">소속</label>
-												<div class="col-8 col-xl-8">
+													class="col-4 col-lg-4 col-md-3 col-form-label">소속</label>
+												<div class="col-8 col-lg-8 col-md-9">
 													<input type="text" id="simpleinput" class="form-control">
 												</div>
 											</div>
 											<div class="row mb-2">
 												<label for="simpleinput"
-													class="col-4 col-xl-4 col-form-label">신청자</label>
-												<div class="col-8 col-xl-8">
+													class="col-4 col-lg-4 col-md-3 col-form-label">신청자</label>
+												<div class="col-8 col-lg-8 col-md-9">
 													<input type="text" id=simpleinput " class="form-control">
 												</div>
 											</div>
 											<div class="row mb-2">
 												<label for="simpleinput"
-													class="col-4 col-xl-4 col-form-label">포트</label>
-												<div class="col-8 col-xl-8">
+													class="col-4 col-lg-4 col-md-3 col-form-label">포트</label>
+												<div class="col-8 col-lg-8 col-md-9">
 													<input type="text" id="simpleinput" class="form-control">
 												</div>
 											</div>
 											<div class="row mb-2">
 												<label for="example-select"
-													class="col-4 col-xl-4 col-form-label">허용/차단</label>
-												<div class="col-8 col-xl-8">
+													class="col-4 col-lg-4 col-md-3 col-form-label">허용/차단</label>
+												<div class="col-8 col-lg-8 col-md-9">
 													<select class="form-select" id="example-select">
 														<option>허용</option>
 														<option>차단</option>
@@ -97,22 +97,22 @@
 										<form>
 											<div class="row mb-2">
 												<label for="simpleinput"
-													class="col-4 col-xl-3 col-form-label">출발지</label>
-												<div class="col-8 col-xl-9">
+													class="col-4 col-lg-4 col-md-3 col-form-label">출발지</label>
+												<div class="col-8 col-lg-8 col-md-9">
 													<input type="text" id="simpleinput" class="form-control" placeholder="xxx.xxx.xxx.xxx">
 												</div>
 											</div>
 											<div class="row mb-2">
 												<label for="simpleinput"
-													class="col-4 col-xl-3 col-form-label">목적지</label>
-												<div class="col-8 col-xl-9">
+													class="col-4 col-lg-4 col-md-3 col-form-label">목적지</label>
+												<div class="col-8 col-lg-8 col-md-9">
 													<input type="text" id="simpleinput" class="form-control" placeholder="xxx.xxx.xxx.xxx">
 												</div>
 											</div>
 											<div class="row mb-2">
 												<label for="example-select"
-													class="col-4 col-xl-3 col-form-label">진행상태</label>
-												<div class="col-8 col-xl-9">
+													class="col-4 col-lg-4 col-md-3 col-form-label">진행상태</label>
+												<div class="col-8 col-lg-8 col-md-9">
 													<select class="form-select" id="example-select">
 														<option>신청</option>
 														<option>승인중</option>
@@ -127,12 +127,13 @@
 									<div class="col-lg-5">
 										<div class="row mb-2">
 											<label for="example-date"
-												class="col-4 col-xl-3 col-form-label">신청일자</label>
-											<div class="col-5 col-xl-4">
+												class="col-4 col-md-3 col-form-label">신청일자</label>
+											<div class="col-5 col-md-4 date_l">
 												<input class="form-control" id="example-date" type="date"
 													name="date">
 											</div>
-											<div class="col-5 col-xl-4">
+											<div class="col-1 date"><span>~</span></div>
+											<div class="col-5 col-md-4 date_r">
 												<input class="form-control" id="example-date" type="date"
 													name="date">
 											</div>
@@ -140,40 +141,28 @@
 
 										<div class="row mb-2">
 											<label for="example-date"
-												class="col-4 col-xl-3 col-form-label">사용기간</label>
-											<div class="col-5 col-xl-4">
+												class="col-4 col-md-3 col-form-label">사용기간</label>
+											<div class="col-5 col-md-4 date_l">
 												<input class="form-control" id="example-date" type="date"
 													name="date">
 											</div>
-											<div class="col-5 col-xl-4">
+											<div class="col-1 date"><span>~</span></div>
+											<div class="col-5 col-md-4 date_r">
 												<input class="form-control" id="example-date" type="date"
 													name="date">
 											</div>
 										</div>
 										<div class="row mb-2">
 											<label for="example-select"
-												class="col-4 col-xl-3 col-form-label">TCP/UDP</label>
-											<div class="col-8 col-xl-8">
+												class="col-4 col-md-3 col-form-label">TCP/UDP</label>
+											<div class="col-9 col-md-9">
 												<select class="form-select" id="example-select">
 													<option>TCP</option>
 													<option>UDP</option>
 												</select>
 											</div>
 										</div>
-										<div class="row mb-2">
-											<label for="example-date"
-												class="col-4 col-xl-3 col-form-label"></label>
-											<div class="col-5 col-xl-9">
-												<div class="button-list">
-													<button type="button"
-														class="btn btn-primary width-sd waves-effect waves-light">검색</button>
-													<button type="button"
-														class="btn btn-primary width-md waves-effect waves-light">검색 초기화</button>
-													<button type="button"
-														class="btn btn-info width-md waves-effect waves-light">신규등록</button>
-												</div>
-											</div>
-										</div>
+										
 
 									</div>
 									<!-- end col -->
@@ -184,19 +173,25 @@
 							<!-- end card-body -->
 						</div>
 						<!-- end card -->
+						<div class="row">
+							<div class="col-12">
+								<div class="button-list">
+									<button type="button" class="btn btn-blue width-sd waves-effect waves-light">검색</button>
+									<button type="button" class="btn btn-secondary width-md waves-effect waves-light">검색 초기화</button>
+									<button type="button" class="btn btn-info width-md waves-effect waves-light">신규등록</button>
+								</div>
+							</div>
+						</div>					
 					</div>
 					<!-- end col -->
 				</div>
 				<!-- end row -->
 
-
 				<div class="row">
 					<div class="col-12">
 						<div class="card">
 							<div class="card-body">
-
-								<table id="datatable-buttons"
-									class="table table-striped dt-responsive nowrap w-100">
+								<table id="datatable-buttons"  class="table table-striped dt-responsive nowrap w-100">
 									<thead>
 										<tr>
 											<th>Name</th>

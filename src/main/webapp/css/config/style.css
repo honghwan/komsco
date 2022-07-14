@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+/*top bar*/
+.top_bar { display: flex; justify-content: space-evenly; font-size:1rem;}
+/*left menu*/
+
+/*contents*/
+.date_l { padding-right: 0;}
+.date_r { padding-left: 0;}
+.date {line-height:2; text-align:center;}
+
+.button-list { float:right; }

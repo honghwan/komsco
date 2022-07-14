@@ -68,12 +68,12 @@
 				</span>
 			</a>
 		</div>
-		<ul class="list-unstyled topnav-menu topnav-menu-left m-0">
-			<li>
+		<ul class="list-unstyled topnav-menu topnav-menu-left m-0 top_bar">
+			<!-- <li>
 				<button class="button-menu-mobile waves-effect waves-light">
 					<i class="fe-menu"></i>
 				</button>
-			</li>
+			</li> -->
 			<li class="d-none d-xl-block">
 				<a class="nav-link waves-effect waves-light" href="#" role="button" aria-haspopup="false" aria-expanded="false">
 					서비스관리
@@ -103,4 +103,6 @@
 		<div class="clearfix"></div>
 	</div>
 </div>
+
 <!-- end Topbar -->
+

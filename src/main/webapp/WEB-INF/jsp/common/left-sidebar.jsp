@@ -8,7 +8,7 @@
 				<li class="menu-title mt-2"> 서비스관리 </li>
 				<li>
 					<a href="#sidebarFirewall" data-bs-toggle="collapse">
-						<i data-feather="clipboard"></i>
+						<i class="bi bi-shield"></i>
 						<span> 방화벽 </span>
 						<span class="menu-arrow"></span>
 					</a>
@@ -21,7 +21,7 @@
 				</li>
 				<li>
 					<a href="#sidebarIps" data-bs-toggle="collapse">
-						<i data-feather="clipboard"></i>
+						<i class="bi bi-bricks"></i>
 						<span> IPS / DDoS </span>
 						<span class="menu-arrow"></span>
 					</a>
@@ -33,7 +33,7 @@
 				</li>
 				<li>
 					<a href="#sidebarWebfirewall" data-bs-toggle="collapse">
-						<i data-feather="clipboard"></i>
+						<i class="bi bi-shield-lock"></i>
 						<span> 웹 방화벽 </span>
 						<span class="menu-arrow"></span>
 					</a>
@@ -46,7 +46,7 @@
 				</li>
 				<li>
 					<a href="#sidebarHarmful" data-bs-toggle="collapse">
-						<i data-feather="clipboard"></i>
+						<i class="bi bi-window-x"></i>
 						<span> 유해 사이트 </span>
 						<span class="menu-arrow"></span>
 					</a>
@@ -58,7 +58,7 @@
 				</li>
 				<li>
 					<a href="#sidebarNac" data-bs-toggle="collapse">
-						<i data-feather="clipboard"></i>
+						<i class="bi bi-person-bounding-box"></i>
 						<span> NAC </span>
 						<span class="menu-arrow"></span>
 					</a>
@@ -70,7 +70,7 @@
 				</li>
 				<li>
 					<a href="all_service.jsp" data-bs-toggle="collapse">
-						<i data-feather="clipboard"></i>
+						<i class="bi bi-clipboard"></i>
 						<span> 전체조회 </span>
 					</a>
 				</li>

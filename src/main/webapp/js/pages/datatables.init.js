@@ -32,7 +32,7 @@ $(document).ready(function() {
             { extend: 'excel', className: 'btn-light' }
         ],
         searching:         false,
-        "scrollY":        "350px",
+        "scrollY":        "46vh",
         "scrollCollapse": true,
         "paging":         false,
         "language": {
@@ -76,8 +76,8 @@ $(document).ready(function() {
         }
     });
 
-    table.buttons().container()
-            .appendTo('#datatable-buttons_wrapper .col-md-6:eq(0)');
+/*	table.buttons().container()
+    	.appendTo('#datatable-buttons_wrapper .col-md-6:eq(0)');*/
 
 
     // Alternative Pagination Datatable
@@ -90,7 +90,7 @@ $(document).ready(function() {
 
     // Scroll Vertical Datatable
     $('#scroll-vertical-datatable').DataTable({
-        "scrollY":        "350px",
+        "scrollY":        "46vh",
         "scrollCollapse": true,
         "paging":         false,
         "language": {
