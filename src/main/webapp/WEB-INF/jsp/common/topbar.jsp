@@ -59,7 +59,7 @@
 		</ul>
 		<!-- LOGO -->
 		<div class="logo-box">
-			<a href="<c:url value='/WEB-INF/general/main/my_request_list.jsp'/>" class="logo logo-dark text-center">
+			<a href="<c:url value='/main/myRequest.do'/>" class="logo logo-dark text-center">
 				<span class="logo-sm">
 					<img src="/images/logo-komsco.png" height="30">
 				</span>

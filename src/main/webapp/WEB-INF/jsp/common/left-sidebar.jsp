@@ -14,8 +14,8 @@
 					</a>
 					<div class="collapse" id="sidebarFirewall">
 						<ul class="nav-second-level">
-							<li><a href="/policy_main_view.jsp">정책 허용 / 차단 신청</a></li>
-							<li><a href="/black_main_view.jsp">블랙리스트 IP 차단 해제 신청</a></li>
+							<li><a href="/service/firewall/policyMainView.do">정책 허용 / 차단 신청</a></li>
+							<li><a href="/service/firewall/blackMainView.do">블랙리스트 IP 차단 해제 신청</a></li>
 						</ul>
 					</div>
 				</li>

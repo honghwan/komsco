@@ -5,188 +5,111 @@
 <%@ taglib prefix="validator"
 	uri="http://www.springmodules.org/tags/commons-validator"%>
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
-
-
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-<title>정책허용/차단신청</title>
+<title>KOMSCO | </title>
 <%@ include file="../../common/title-meta.jsp"%>
 <%@ include file="../../common/head-css.jsp"%>
 </head>
-
-
 <!-- body start -->
 <%@ include file="../../common/body.jsp"%>
-
 <!-- Begin page -->
 <div id="wrapper">
 	<%@ include file="../../common/menu.jsp"%>﻿
-
 	<!-- ============================================================== -->
 	<!-- Start Page Content here -->
 	<!-- ============================================================== -->
-
 	<div class="content-page">
 		<div class="content">
-
 			<!-- Start Content-->
 			<div class="container-fluid">
-
 				<!-- start page title -->
 				<div class="row">
 					<div class="col-12">
 						<div class="page-title-box">
-							<h4 class="page-title">정책허용/차단신청</h4>
-							<div class="page-title-right">
-								<ol class="breadcrumb m-0">
-									<li class="breadcrumb-item">Home</a></li>
-									<li class="breadcrumb-item">서비스관리</a></li>
-									<li class="breadcrumb-item">방화벽</a></li>
-									<li class="breadcrumb-item active">정책허용/차단신청</li>
-								</ol>
-							</div>
+							<h4 class="page-title">나의 요청 현황</h4>
 						</div>
 					</div>
 				</div>
 				<!-- end page title -->
-
 				<div class="row">
 					<div class="col-12">
 						<div class="card">
 							<div class="card-body">
 								<div class="row">
 									<div class="col-lg-3">
-										<form>
-											<div class="row mb-2">
-												<label for="simpleinput"
-													class="col-4 col-lg-4 col-md-3 col-form-label">소속</label>
-												<div class="col-8 col-lg-8 col-md-9">
-													<input type="text" id="simpleinput" class="form-control">
-												</div>
-											</div>
-											<div class="row mb-2">
-												<label for="simpleinput"
-													class="col-4 col-lg-4 col-md-3 col-form-label">신청자</label>
-												<div class="col-8 col-lg-8 col-md-9">
-													<input type="text" id=simpleinput " class="form-control">
-												</div>
-											</div>
-											<div class="row mb-2">
-												<label for="simpleinput"
-													class="col-4 col-lg-4 col-md-3 col-form-label">포트</label>
-												<div class="col-8 col-lg-8 col-md-9">
-													<input type="text" id="simpleinput" class="form-control">
-												</div>
-											</div>
-											<div class="row mb-2">
-												<label for="example-select"
-													class="col-4 col-lg-4 col-md-3 col-form-label">허용/차단</label>
-												<div class="col-8 col-lg-8 col-md-9">
-													<select class="form-select" id="example-select">
-														<option>허용</option>
-														<option>차단</option>
-													</select>
-												</div>
-											</div>
-										</form>
-									</div>
-									<!-- end col -->
-
-									<div class="col-lg-4">
-										<form>
-											<div class="row mb-2">
-												<label for="simpleinput"
-													class="col-4 col-lg-4 col-md-3 col-form-label">출발지</label>
-												<div class="col-8 col-lg-8 col-md-9">
-													<input type="text" id="simpleinput" class="form-control" placeholder="xxx.xxx.xxx.xxx">
-												</div>
-											</div>
-											<div class="row mb-2">
-												<label for="simpleinput"
-													class="col-4 col-lg-4 col-md-3 col-form-label">목적지</label>
-												<div class="col-8 col-lg-8 col-md-9">
-													<input type="text" id="simpleinput" class="form-control" placeholder="xxx.xxx.xxx.xxx">
-												</div>
-											</div>
-											<div class="row mb-2">
-												<label for="example-select"
-													class="col-4 col-lg-4 col-md-3 col-form-label">진행상태</label>
-												<div class="col-8 col-lg-8 col-md-9">
-													<select class="form-select" id="example-select">
-														<option>신청</option>
-														<option>승인중</option>
-														<option>승인완료</option>
-														<option>반려</option>
-														<option>취소</option>
-													</select>
-												</div>
-											</div>
-										</form>
-									</div>
-									<div class="col-lg-5">
-										<div class="row mb-2">
-											<label for="example-date"
-												class="col-4 col-md-3 col-form-label">신청일자</label>
-											<div class="col-5 col-md-4 date_l">
-												<input class="form-control" id="example-date" type="date"
-													name="date">
-											</div>
-											<div class="col-1 date"><span>~</span></div>
-											<div class="col-5 col-md-4 date_r">
-												<input class="form-control" id="example-date" type="date"
-													name="date">
-											</div>
-										</div>
-
-										<div class="row mb-2">
-											<label for="example-date"
-												class="col-4 col-md-3 col-form-label">사용기간</label>
-											<div class="col-5 col-md-4 date_l">
-												<input class="form-control" id="example-date" type="date"
-													name="date">
-											</div>
-											<div class="col-1 date"><span>~</span></div>
-											<div class="col-5 col-md-4 date_r">
-												<input class="form-control" id="example-date" type="date"
-													name="date">
-											</div>
-										</div>
-										<div class="row mb-2">
-											<label for="example-select"
-												class="col-4 col-md-3 col-form-label">TCP/UDP</label>
-											<div class="col-9 col-md-9">
-												<select class="form-select" id="example-select">
-													<option>TCP</option>
-													<option>UDP</option>
-												</select>
-											</div>
-										</div>
-										
-
+										<ul class="nav nav-pills nav-fill navtab-bg">
+											<li class="nav-item">
+												<a href="#progressStatus" data-bs-toggle="tab" aria-expanded="false" class="nav-link active">
+													진행상태현황
+												</a>
+											</li>
+											<li class="nav-item">
+												<a href="#requestStatus" data-bs-toggle="tab" aria-expanded="true" class="nav-link">
+													신청구분현황
+												</a>
+											</li>
+										</ul>
 									</div>
 									<!-- end col -->
 								</div>
 								<!-- end row-->
-
+								<div class="tab-content">
+									<div class="tab-pane show active" id="progressStatus">
+										<table>
+										
+										</table>
+									</div>
+									<div class="tab-pane" id="requestStatus">
+										<table border="2" style="width:100%;">
+											<thead>
+												<tr>
+													<th rowspan="2">전체</th>
+													<th colspan="2">방화벽</th>
+													<th rowspan="2">IPS/DDos</th>
+													<th colspan="2">웹방화벽</th>
+													<th rowspan="2">유해사이트</th>
+													<th rowspan="2">NAC</th>
+												</tr>
+												<tr>
+													<th>정책허용/차단</th>
+													<th>블랙리스트</th>
+													<th>신규 도메인</th>
+													<th>정책허용/차단</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>1</td>
+													<td>2</td>
+													<td>3</td>
+													<td>4</td>
+													<td>5</td>
+													<td>6</td>
+													<td>7</td>
+													<td>8</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
 							</div>
 							<!-- end card-body -->
 						</div>
 						<!-- end card -->
-						<div class="row">
-							<div class="col-12">
-								<div class="button-list">
-									<button type="button" class="btn btn-blue width-sd waves-effect waves-light">검색</button>
-									<button type="button" class="btn btn-secondary width-md waves-effect waves-light">검색 초기화</button>
-									<button type="button" class="btn btn-info width-md waves-effect waves-light">신규등록</button>
-								</div>
-							</div>
-						</div>					
 					</div>
 					<!-- end col -->
 				</div>
 				<!-- end row -->
-
+				<!-- start page title -->
+				<div class="row">
+					<div class="col-12">
+						<div class="page-title-box">
+							<h4 class="page-title">나의 요청 목록</h4>
+						</div>
+					</div>
+				</div>
 				<div class="row">
 					<div class="col-12">
 						<div class="card">
@@ -194,16 +117,16 @@
 								<table id="datatable-buttons"  class="table table-striped dt-responsive nowrap w-100">
 									<thead>
 										<tr>
-											<th>Name</th>
-											<th>Position</th>
-											<th>Office</th>
-											<th>Age</th>
-											<th>Start date</th>
-											<th>Salary</th>
+											<th>No</th>
+											<th>신청구분</th>
+											<th>신청자</th>
+											<th>신청일자</th>
+											<th>요청사유</th>
+											<th>완료요청일자</th>
+											<th>진행상태</th>
+											<th>첨부파일</th>
 										</tr>
 									</thead>
-
-
 									<tbody>
 										<tr>
 											<td>Tiger Nixon</td>
@@ -663,7 +586,6 @@
 										</tr>
 									</tbody>
 								</table>
-
 							</div>
 							<!-- end card body-->
 						</div>
@@ -672,28 +594,17 @@
 					<!-- end col-->
 				</div>
 				<!-- end row-->
-
-
-
 			</div>
 			<!-- container -->
-
 		</div>
 		<!-- content -->
-
 		<%@ include file="../../common/footer.jsp"%>
-
 	</div>
-
 	<!-- ============================================================== -->
 	<!-- End Page content -->
 	<!-- ============================================================== -->
-
-
 </div>
 <!-- END wrapper -->
-
 <%@ include file="../../common/body-js.jsp"%>
-
 </body>
 </html>
